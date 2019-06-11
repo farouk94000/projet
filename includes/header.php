@@ -81,7 +81,7 @@ if (isset($connect))
                         
                     }
             ?>
-					<h1>Salut!</h1>
+				
 				
 		</span>
 			
