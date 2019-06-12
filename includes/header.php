@@ -31,7 +31,7 @@ else {
          else{ 
             $ins=$connexion->prepare("INSERT INTO users(mail,login,pass) values(?,?,?)"); 
             if($ins->execute(array($mail,$login,password_hash($pass,PASSWORD_DEFAULT)))); 
-               
+			header('location:/projet/foodexplore.php');
          }    
 	}
 }
@@ -45,7 +45,7 @@ if (isset($connect))
 	// var_dump($tab);
 	if(password_verify($psw,$tab[0]["pass"])){
 		$_SESSION['login'] = $pseudo;
-		header('location:/projet/foodexplore.php');
+		header('location:/projet/session.php');
 	}
 }
 ?>
@@ -71,7 +71,15 @@ if (isset($connect))
 					
                     if(@$_SESSION['login']){
 
-                        echo'<a href="/projet/decon.php" style="color:#FCBB04;"><button>Déconnexion</button></a>';
+						echo'
+								<span class="dropdown">
+									<button class="dropbtn"><img src="icon/user1.png" alt="Avatar">
+									</button>
+									<span class="dropdown-content">
+										<a href="decon.php">Se déconnecter</a>
+									</span>
+								</span>
+							';
 
 					}
 					
@@ -100,8 +108,7 @@ if (isset($connect))
 									<input type="password" placeholder="Votre mot de passe" name="psw" required>								
       
 								<div class="clearfix">
-									<button type="submit" name="connect" class="signupbtn">Se connecter</button>
-									
+									<button type="submit" name="connect">Se connecter</button>									
 								</div>
 
 								<hr>
@@ -137,7 +144,7 @@ if (isset($connect))
 				
 				<li><a href="categories.php" class="button">CATÉGORIES</a></li>
 
-				<li><a href="#" class="button">MES FAVORIS</a></li>
+				<li><a href="inscription.php" class="button">S'INSCRIRE</a></li>
 					
 				<li><a href="#" class="button">TOPS</a></li>
 					

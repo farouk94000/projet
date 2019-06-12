@@ -20,10 +20,10 @@
 	if ( isset($_SESSION['login']) )
 	{
 
-		@$name=htmlspecialchars($_POST["nom"]);
-		@$adress=htmlspecialchars($_POST["adress"]);
+		@$nom=htmlspecialchars($_POST["nom"]);
+		@$adresse=htmlspecialchars($_POST["adresse"]);
 		@$category=htmlspecialchars($_POST["category"]);
-		@$photo=htmlspecialchars($_POST["photo"]);
+		@$img=htmlspecialchars($_POST["img"]);
 		@$submit=$_POST["submit"];
 
 
@@ -39,7 +39,7 @@
 			$sub=$connexion->prepare('INSERT INTO restaurant(nom,adresse,category,img) values (?,?,?,?)'); 
 
 
-			$sub->execute(array($name,$adress,$category,$photo));
+			$sub->execute(array($nom,$adresse,$category,$img));
 
 			echo'Votre suggestion est bien transmise !';			
 			
@@ -65,10 +65,9 @@
 			
 								<p><label for="nom">Nom :</label><br/><input type="text" name="nom" id="nom" class="form-control" maxlength="25" placeholder="(obligatoire)" required/></p>
 			
-								<p><label for="adress">Adresse :</label><br/><input type="text" name="adress" id="adress" class="form-control" maxlength="50" placeholder="(obligatoire)" required/></p>
+								<p><label for="adress">Adresse :</label><br/><input type="text" name="adresse" id="adresse" class="form-control" maxlength="50" placeholder="(obligatoire)" required/></p>
 
-								<p><label for="category">Catégorie :</label><br/><input type="text" name="category" id="category" class="form-control" maxlength="50" placeholder="(obligatoire)" required/></p>
-						
+								<p><label for="category">Catégorie :</label><br/><input type="text" name="category" id="category" class="form-control" maxlength="50" placeholder="(obligatoire)" required/></p>					
 				
 						</fieldset>
 			
@@ -76,11 +75,11 @@
 						<fieldset>
 									<legend><strong>Photo ( URL jpeg ou png) :</strong></legend>
 								<p>
-									<input type="url" name="photo" placeholder="(facultatif)" /><br />
+									<input type="url" name="img" placeholder="(facultatif)" /><br />
 								</p>
 						</fieldset>				
 			
-								<p><input type="submit" class="btn" name="submit" value="Soumettre"/></p>	
+						<button type="submit" name="submit" class="btn">Soumettre</button>
 			
 					</form> 
 			

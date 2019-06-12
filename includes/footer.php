@@ -42,9 +42,9 @@
 		
 				<div class="reseaux">
 					<h4>NOUS SUIVRE:<h4>
-						<a href="#">	<img src="icon/facebook.png"/></a>
-						<a href="#">	<img src="icon/instagram.png"/></a>
-						<a href="#">	<img src="icon/twitter.png"/></a>
+						<a href="https://www.facebook.com/farouk.RKF">	<img src="icon/facebook.png"/></a>
+						<a href="https://www.instagram.com/faroukrennopatissier/?hl=fr">	<img src="icon/instagram.png"/></a>
+						<a href="https://twitter.com/login">	<img src="icon/twitter.png"/></a>
 						
 				</div>
 				

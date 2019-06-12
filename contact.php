@@ -45,7 +45,7 @@
 	
 						<p><label for="message">Votre message :</label><br/><textarea name="message" id="message" class="form-control" placeholder="Votre message"></textarea></p>
 		
-						<p><input type="submit" class="btn" value="Envoyer"/></p>	
+						<button type="submit" class="btn">Envoyer</button>	
 	
 					</form> 
 	

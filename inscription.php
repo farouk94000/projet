@@ -18,38 +18,40 @@
 					<?php include("includes/header.php") ?>
 
 
+				<div id="formbox" style= " width: 40%; height: 100%;">
+					<form method="post" >
+						<div class="container">
+							<h1>Inscription</h1>
+								<p><strong>Veuillez remplir tout les champs obligatoires</strong></p>
+									<hr>
+										<label for="email"><b>Email</b></label>
+										
+											<input type="email" placeholder="Email" name="mail" required>
+											
+										<label for="pseudo"><b>Pseudo</b></label>
 
-<form method="post" class="modal-content"  >
-				<div class="container">
-					<h1>Inscription</h1>
-						<p><strong>Veuillez remplir tout les champs obligatoires</strong></p>
-							<hr>
-								<label for="email"><b>Email</b></label>
-									<input type="email" placeholder="Email" name="mail" required>
-									
-								<label for="pseudo"><b>Pseudo</b></label>
-									<input type="text" placeholder="Pseudo" name="login" required>
+											<input type="text" placeholder="Pseudo" name="login" required>
 
-								<label for="psw"><b>Mot de passe</b></label>
-									<input type="password" placeholder="Mot de passe" name="password" required>
+										<label for="psw"><b>Mot de passe</b></label>
 
-								<label for="psw-repeat"><b>Confirmez mot de passe</b></label>
-									<input type="password" placeholder="Confirmez mot de passe" name="confirm" required>
-      
-								<label>
-									<input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Se rappeler de moi
-								</label>
+											<input type="password" placeholder="Mot de passe" name="password" required>
 
-							<p>En s'inscrivant sur notre site vous déclarez accepter les <a href="#" style="color:blue">Termes & Conditions d'utilisation</a>.</p>
+										<label for="psw-repeat"><b>Confirmez mot de passe</b></label>
 
-						<div class="clearfix">
-							
-                            <button type="submit" name="inscrip" class="signupbtn">S'inscrire</button>
-                            
-						</div>
-				</div>
+											<input type="password" placeholder="Confirmez mot de passe" name="confirm" required>
+
+										<label><input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Se rappeler de moi</label>
+
+										<p>En s'inscrivant sur notre site vous déclarez accepter les <a href="#" style="color:blue">Termes & Conditions d'utilisation</a>.</p>
+
+										<div class="clearfix">
+											
+											<button type="submit" name="inscrip" class="btn">S'inscrire</button>
+											
+										</div>
+					</div>
 			</form>
-
+</div>
 
             <?php include("includes/footer.php") ?>
 
