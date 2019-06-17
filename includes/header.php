@@ -18,7 +18,7 @@ if (isset($connect))
 	// var_dump($tab);
 	if(password_verify($psw,$tab[0]["pass"])){
 		$_SESSION['login'] = $pseudo;
-		header('location:/projet/session.php');
+		header('location:../projet/session.php');
 	}
 
 	else {
@@ -126,7 +126,7 @@ if (isset($connect))
 				
 				<li><a href="categories.php" class="button">CATÉGORIES</a></li>
 
-				<li><a href="#" class="button">TOPS</a></li>
+				<li><a href="tops.php" class="button">TOPS</a></li>
 					
 				<li><a href="suggerer.php" class="button">SUGGÉRER ADRESSE</a></li>
 				
