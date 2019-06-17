@@ -1,40 +1,13 @@
 ﻿<?php
 session_start();
-@$mail=htmlspecialchars($_POST["mail"]);
-@$login=htmlspecialchars($_POST["login"]);
-@$pass=htmlspecialchars($_POST["password"]);
-@$repass=htmlspecialchars($_POST["confirm"]);
-@$inscription=$_POST["inscrip"];
 @$pseudo=htmlspecialchars($_POST["pseudo"]);
 @$psw=htmlspecialchars($_POST["psw"]);
 @$connect=$_POST["connect"];
 
 
-$erreur="";
+$wrong="";
 
-if (isset($inscription))
-{
-	include("bdd.php");
-	
-	if($pass!=$repass) $erreur="Mots de passe non identiques!";
-	
-	
 
-else {
-	
-
-		$sel=$connexion->prepare("SELECT id FROM users WHERE login=? limit=1"); 
-         $sel->execute(array($login)); 
-         $tab=$sel->fetchAll(); 
-         if(count($tab)>0) 
-            $erreur="Login existe déjà!"; 
-         else{ 
-            $ins=$connexion->prepare("INSERT INTO users(mail,login,pass) values(?,?,?)"); 
-            if($ins->execute(array($mail,$login,password_hash($pass,PASSWORD_DEFAULT)))); 
-			header('location:/projet/foodexplore.php');
-         }    
-	}
-}
 
 if (isset($connect))
 {
@@ -46,6 +19,10 @@ if (isset($connect))
 	if(password_verify($psw,$tab[0]["pass"])){
 		$_SESSION['login'] = $pseudo;
 		header('location:/projet/session.php');
+	}
+
+	else {
+		$wrong="Erreur mot de passe";
 	}
 }
 ?>
@@ -61,12 +38,14 @@ if (isset($connect))
 		</div>	
 
 		<span class="login">
-				<script>
+
+			<script>
 				function apparitionLog(){
 					document.getElementById("id02").style.display="block";
 				}
 
-				</script>
+			</script>
+
 			<?php
 					
                     if(@$_SESSION['login']){
@@ -87,9 +66,12 @@ if (isset($connect))
 
                        echo "<button onclick='apparitionLog()' style='width:auto;'>Se connecter</button>";
                         
-                    }
+					}
+					
+
+					
             ?>
-				
+				<span style="color:red"><?php echo $wrong; ?> </span>
 				
 		</span>
 			
@@ -144,13 +126,15 @@ if (isset($connect))
 				
 				<li><a href="categories.php" class="button">CATÉGORIES</a></li>
 
-				<li><a href="inscription.php" class="button">S'INSCRIRE</a></li>
-					
 				<li><a href="#" class="button">TOPS</a></li>
 					
 				<li><a href="suggerer.php" class="button">SUGGÉRER ADRESSE</a></li>
 				
 				<li><a href="contact.php" class="button">CONTACT</a></li>
+
+				<?php if(!@$_SESSION['login']){ ?>	
+				<li><a href="inscription.php" class="button">S'INSCRIRE</a></li>
+				<?php }	?>
 			
 			
 			</ul>

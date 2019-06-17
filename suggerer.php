@@ -1,4 +1,4 @@
-﻿<?php session_start(); ?>
+﻿<?php include("includes/header.php") ?>
 
 <!DOCTYPE html>
 <html>
@@ -13,13 +13,13 @@
 			</head>
 <body>			
 			
-			
+
 			
 
 	
 
 			
-				<div id="formbox" style= " width: 40%; height: 100%;">
+				
 			
 					<?php
 
@@ -50,7 +50,7 @@
 
 					?>	
 
-
+					<div id="formbox">
 							<h2>Suggérez-nous un restaurant</h2>
 									<div class="presentation">				
 										<p>Food Explore ce n'est pas un simple annuaire de restaurants, nous comptons sur l'expérience de chaque <i>FoodExplorers</i> pour faire découvrir à la communauté de nouvelles adresses afin de toujours être à la page !</p>
@@ -86,12 +86,12 @@
 							else
 							{
 					?>	
-							<h1 class="defaultmessage"> Vous devez vous connecter ou être <a href="inscription.php" style="font-weight:bolder, font-size:40px">inscrit</a> pour suggérer une adresse </h1> 
+							<h1 class="defaultmessage"> Vous devez vous connecter ou être <a href="inscription.php" >inscrit</a> pour suggérer une adresse </h1> 
 					<?php
 							}	
 					?>
 
-							<?php include("includes/footer.php") ?>
+				<?php include("includes/footer.php") ?>			
 </body>
 
 </html>	
