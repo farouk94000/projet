@@ -120,9 +120,7 @@ if (isset($connect))
 		<nav id="menu"> 	
 			<ul id="menu_horizontal">
 				
-				<li><a href="foodexplore.php"> <img src="icon/home.png" class="home" height="30px" alt="home"/></a></li>
-				
-				<li><a href="categories.php" class="button">QUI SOMME-NOUS ?</a></li>
+				<li><a href="foodexplore.php"> <img src="icon/home.png" class="home" height="30px" alt="home"/></a></li>				
 				
 				<li><a href="categories.php" class="button">CATÉGORIES</a></li>
 

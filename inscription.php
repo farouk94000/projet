@@ -23,7 +23,6 @@
 		if (isset($inscription))
 		{
 			
-			
 			if($pass!=$repass) {$erreur="Erreur: Mots de passe non identiques!";}
 			
 			
@@ -56,12 +55,12 @@
 					<form method="post" >
 						<div class="container">
 							<h1>Inscription</h1>
-								<p style="font-family: Arial, Helvetica, sans-serif;"><strong>Veuillez remplir tout les champs obligatoires</strong></p>
+								<p style="font-family: Arial, Helvetica, sans-serif;"><strong>*Veuillez remplir tout les champs obligatoires</strong></p>
 								<p style="color:red;"><?php echo $erreur; ?></p>
 									<hr>
 										<label for="email"><b>Email*</b> </label>
 
-											<input type="email" placeholder="Email (Obligatoire)" name="mail" required>
+											<input type="email" placeholder="Email (Obligatoire)" pattern="[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+.[a-zA-Z.]{2,15}" name="mail" required>
 											
 										<label for="pseudo"><b>Pseudo*</b> </label>
 
@@ -84,13 +83,13 @@
 											
 										</div>
 
-									<p style="float:left;">* Champs obligatoires</p>
+									
 					</div>
 			</form>
 														
 </div>
 
-            <?php include("includes/footer.php") ?>
+            
 
 
 </body>

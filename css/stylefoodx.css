@@ -21,6 +21,7 @@ a {
 header{
 	width: 100%;	
 	background-color:black;
+	background-image: url(../img/bandeau.jpg);
 	margin-bottom:80px;	
 	
 }
