@@ -233,7 +233,7 @@ legend{
 
 
 
-							/*Formulaire Contact*/	
+							/*Formulaire*/	
 #formbox {
 	width: 40%; 
 	height: 100%;
@@ -245,6 +245,7 @@ legend{
     border-radius: 6px;       
 	border: none;
 	box-shadow: 0 16px 44px rgba(0,0,0,.21);
+	overflow: hidden;
 	
 }
 

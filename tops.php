@@ -120,39 +120,45 @@ img {vertical-align: middle;}
 <div class="slideshow-container">
 
 <div class="mySlides fade">
-  <div class="numbertext">1 / 6</div>
+  <div class="numbertext">1 / 7</div>
   <img src="http://s3-eu-central-1.amazonaws.com/tablemi.images/okito_588/gallery/dfa462f4-0912-4633-81b8-fbb5bc15306f.jpg" style="width:100%">
-  <div class="text"><h3>Okito</h3></div>
+  <div class="text"><h3>Okito - Paris 15ème</h3></div>
 </div>
 
 <div class="mySlides fade">
-  <div class="numbertext">2 / 6</div>
+  <div class="numbertext">2 / 7</div>
   <img src="http://www.freeresto.com/restos/pics/1201_2.jpg?1560233794" style="width:100%">
-  <div class="text">La Fabrique Burger Gourmet</div>
+  <div class="text">La Fabrique Burger Gourmet - Paris 14ème</div>
 </div>
 
 <div class="mySlides fade">
-  <div class="numbertext">3 / 6</div>
+  <div class="numbertext">3 / 7</div>
   <img src="https://www.restofolio.fr/media/W1siZiIsIjIwMTgvMDEvMTYvNHU2M2x5NWd5bl8yNjkwMzY1Ml8xNjg0NzQwODc0OTA2MDc5XzE5NTE2NjMwMDM1MTMwOTg1NDBfbi5qcGciXSxbInAiLCJlbmNvZGUiLCJqcGciLCItcXVhbGl0eSA0MCJdLFsicCIsInRodW1iIiwiMTI0MHgiXV0/26903652_1684740874906079_1951663003513098540_n.jpg?sha=b4f6d985a76e9f29" style="width:100%">
-  <div class="text">Good Thaï</div>
+  <div class="text">Good Thaï - Ivry-sur-Seine</div>
 </div>
 
 <div class="mySlides fade">
-  <div class="numbertext">4 / 6</div>
+  <div class="numbertext">4 / 7</div>
   <img src="http://www.guide-restaurants-et-voyages-du-monde.com/images/restaurants/00110-lejanissaire/lejanissairebig.jpg" style="width:100%">
-  <div class="text">Le Janissaire</div>
+  <div class="text">Le Janissaire - Paris 12ème</div>
 </div>
 
 <div class="mySlides fade">
-  <div class="numbertext">5 / 6</div>
+  <div class="numbertext">5 / 7</div>
   <img src="https://f.roocdn.com/images/menus/136807/header-image.jpg?width=1200&height=630&auto=webp&format=jpg&fit=crop&v=1556188814" style="width:100%">
-  <div class="text">Makido</div>
+  <div class="text">Makido - Paris 19ème</div>
 </div>
 
 <div class="mySlides fade">
-  <div class="numbertext">6 / 6</div>
+  <div class="numbertext">6 / 7</div>
   <img src="http://www.shisoburger.fr/wp-content/uploads/2017/01/shisomenu.jpg" style="width:100%">
-  <div class="text">Shiso Burger</div>
+  <div class="text">Shiso Burger - Paris 5ème</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">7 / 7</div>
+  <img src="https://photo620x400.mnstatic.com/1bc9e782a85296103ee7aa1861316ba2/gelati-dalberto.jpg" style="width:100%">
+  <div class="text">Gelati d'Alberto - Paris 5ème</div>
 </div>
 
 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -167,7 +173,8 @@ img {vertical-align: middle;}
   <span class="dot" onclick="currentSlide(3)"></span>
   <span class="dot" onclick="currentSlide(4)"></span> 
   <span class="dot" onclick="currentSlide(5)"></span> 
-  <span class="dot" onclick="currentSlide(6)"></span> 
+  <span class="dot" onclick="currentSlide(6)"></span>
+  <span class="dot" onclick="currentSlide(7)"></span> 
 </div>
 
 <script>

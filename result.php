@@ -14,36 +14,30 @@
 			</head>
 			
 <body>			
-	
 
-			
-
-	
-	
-			
-	
 	<div id="box">
 
-			<?php 
-			 for($i =0 ; $i < count($tab); $i++) {
-				echo '<div class="gallery">
-				
-				<img src="'. $tab[$i]['img'].'" alt="img" width="500" height="200">
-				<div class="desc"> 
-				   <h2>'. $tab[$i]['nom'] .'</h2>
-				   
-					<p>'. $tab[$i]['adresse'].'</p> 
-				</div>
-			</div><br>';
-			 }		
-			 ?>
+		<?php 
+			for($i =0 ; $i < count($tab); $i++) 
+			{ 
+		?>
+				<div class="gallery">
+					
+					<img src="<?php echo htmlspecialchars($tab[$i]['img']); ?>" alt="img" width="500" height="200">
+
+					<div class="desc"> 
+						<h2><?php echo htmlspecialchars($tab[$i]['nom']); ?></h2>
+						
+						<p><?php echo htmlspecialchars($tab[$i]['adresse']); ?></p> 
+					</div>
+				</div> 
+				<br>
+		<?php } ?>		
+		
 	</div>			
-			
-			
-			
-	
+				
 			<?php include("includes/footer.php") ?>
 
 	
-	</body>	
+</body>	
 </html>

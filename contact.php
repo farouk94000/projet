@@ -1,62 +1,32 @@
-﻿<?php include("includes/header.php") ?>
+<?php include("includes/header.php") ?>
+
 <!DOCTYPE html>
 <html>
 
-
-			<head>
-			
-				<title>Contact</title>
+<head>
+<title>Contact</title>
 				<link  href="css/stylefoodx.css" rel="stylesheet"   type="text/css" />
 				<link  href="css/stylemodal.css" rel="stylesheet"   type="text/css" />
-				<meta http="Content-Type" content="text/html; charset="utf-8"/>
-			
-			</head>
-			
-<body>			
-			
-			
-	
-	
-	
-	
-			<div id="formbox" style= " width: 40%; height: 100%;">
-	
-				<h2>Contactez-Nous</h2>
-	 
-					<form method="post" action="">
-	
-						<p>
-							<label for="cat">Vous êtes :</label><br/>
-							<select  name="cat" id="cat" class="form-control" >
-								
-								<option value disabled selected>Vous êtes...</option> 
-								<option value="media">Un média</option>
-								<option value="particulier">Un particulier</option>
-								<option value="restaurateur">Un restaurateur</option>
-		   
-							</select>
-						</p>
-						
-						<p><label for="nom">Nom :</label><br/><input type="text" name="nom" id="nom" class="form-control" maxlength="25" placeholder="Votre nom (obligatoire)" required/></p>
-	
-						<p><label for="prenom">Prénom :</label><br/><input type="text" name="prenom" id="prenom" class="form-control" maxlength="25" placeholder="Votre prénom (obligatoire)" required/></p>
-	
-						<p><label for="mail">Email :</label><br/><input type="email" name="mail" id="mail" class="form-control"  maxlength="30" placeholder="Votre e-mail (obligatoire)" required/></p>
-	
-						<p><label for="message">Votre message :</label><br/><textarea name="message" id="message" class="form-control" placeholder="Votre message"></textarea></p>
-		
-						<button type="submit" class="btn">Envoyer</button>	
-	
-					</form> 
-	
-			</div>	
-	
-	
-	
-			<?php include("includes/footer.php") ?>
+				<meta http="Content-Type" content="text/html; charset="utf-8" />    
+                <meta name="viewport" content="width=device-width, initial-scale=1">
 
-			
+<div id="formbox" style= " width: 40%; height: 100%;">
+                <h1> Pour nous Contacter: </h1>
 
-	
-</body>	
-</html>	
+    <h3>Email:</h3>
+    <p>contact@foodexplore.fr</p>
+
+    <h3>Télephone:</h3>
+    <p>(+33) 01.55.82.26.58</p>
+
+    <h3>Adresse:</h3>
+    <p>6 Allée de la Gourmandise</p>
+    <p>75001 - Paris</p>
+
+    <iframe src="https://www.google.com/maps/d/embed?mid=1o1dsniS070n1L1WZiJeYlADKiZB-0_Ak" width="400" height="200"></iframe>
+
+</div>
+
+<?php include("includes/footer.php") ?>
+</body>
+</html>
