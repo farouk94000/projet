@@ -16,7 +16,7 @@
 
 
 <div class="welcome"><p> BIENVENUE ! </p><p><img src="img/foodex1.png"/></p><?php echo @$_SESSION['login']; ?></div>
-					
+					 
 
 
 

@@ -15,7 +15,7 @@
 <div class="mentions">
 <h1>A. MENTIONS LEGALES</h1>
 
-<p>Le site " https://www.foodexplore.com" et les applications mobiles et tablettes La Fourchette sont édités par:</p>
+<p>Le site " https://www.foodexplore.com" et les applications mobiles et tablettes Food Explore sont édités par:</p>
 
 <p>Food Explore SAS
 Société par actions simplifiée au capital de 60.731.355,35 euros
