@@ -24,7 +24,7 @@
 		
 				<div class="footer_menu">
 						<h4>À PROPOS DE NOUS:<h4>
-						
+
 							<a href="mentions.php"><h5>MENTIONS LÉGALES<h5></a>
 							<a href="contact.php"><h5>CONTACT<h5></a>		
 							<a href="categories.php"><h5>CATÉGORIES<h5></a>
