@@ -1,6 +1,7 @@
-﻿<?php include("includes/header.php") ?>
+<?php include("includes/header.php") ?>
 <!DOCTYPE html>
 <html>
+
 
 			<head>
 				<title>Food Explore</title>
@@ -9,25 +10,19 @@
 				<meta http="Content-Type" content="text/html; charset="utf-8"/>
 			
 			</head>
-
-			
 <body>			
-					<div class="title"> <h1>Bienvenue sur Food Explore</h1> </div>
-
-			
-			
-			
 
 
-				
-
-		<div style="height:300px;"></div>
 
 
-			<?php include("includes/footer.php") ?>
+<div class="welcome"><p>MERCI <?php echo @$_SESSION['login'];?>! VOTRE ADRESSE A ÉTÉ AJOUTÉE AVEC SUCCES !</p></div>
+					 
 
 
+
+
+<?php include("includes/footer.php") ?>
 
 </body>
-			
-</html>			
+
+</html>	

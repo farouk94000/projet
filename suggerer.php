@@ -44,6 +44,7 @@
 								
 								$ins=$connexion->prepare("INSERT INTO restaurant(nom,adresse,category,img) VALUES (?,?,?,?)" ); 						
 								$ins->execute(array($nom,$adresse,$category,$img));
+								header('location:/projet/submitted.php');
 					
 							}
 							
