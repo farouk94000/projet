@@ -1,4 +1,4 @@
-<?php include("includes/header.php") ?>
+<?php require("includes/header.php") ?>
 <!DOCTYPE html>
 <html>
 
@@ -26,7 +26,7 @@
 							if (isset($submit))
 							{
 
-								include("includes/bdd.php");
+								require("includes/bdd.php");
 								
 								$sub=$connexion->prepare('INSERT INTO restaurant(nom,adresse,category,img) values (?,?,?,?)'); 
 
@@ -37,5 +37,6 @@
 								
 							}
                         ?>  
+			<?php require("includes/footer.php"); ?>
 </body>
 </html>                                                  

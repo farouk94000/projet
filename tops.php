@@ -1,4 +1,4 @@
-<?php include("includes/header.php") ?>
+<?php require("includes/header.php") ?>
 
 <!DOCTYPE html>
 <html>
@@ -206,5 +206,5 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 </script>
-<?php include("includes/footer.php") ?>
+<?php require("includes/footer.php") ?>
 </body>

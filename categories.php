@@ -15,7 +15,7 @@
 	
 	<body>
 
-					<?php include("includes/header.php") ?>
+					<?php require("includes/header.php") ?>
 	
 							<h1>CATÉGORIES</h1>
 	<div id="boxcard">
@@ -282,7 +282,7 @@
 	</div>
 	
 	
-			<?php include("includes/footer.php") ?>
+			<?php require("includes/footer.php") ?>
 
 	
 	

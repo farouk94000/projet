@@ -1,4 +1,4 @@
-<?php include("includes/header.php") ?>
+<?php require("includes/header.php") ?>
 
 <!DOCTYPE html>
 <html>
@@ -525,7 +525,7 @@ En cas de litige relatif aux conditions d’annulation/de modification ou au fon
 
 </div>
 
-<?php include("includes/footer.php") ?>
+<?php require("includes/footer.php") ?>
 
 
 

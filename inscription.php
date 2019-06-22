@@ -11,23 +11,23 @@
 			
 			</head>
 			
-	<?php			
+	<?php	//Récupération des infos qui sont sauvegardées dans des variables.		
 		@$mail=htmlspecialchars($_POST["mail"]);
 		@$login=htmlspecialchars($_POST["login"]);
 		@$pass=htmlspecialchars($_POST["password"]);
 		@$repass=htmlspecialchars($_POST["confirm"]);
 		@$inscription=$_POST["inscrip"];			
 
-		$erreur="";	
+		$erreur="";	//On défini une variable pour le message d'erreur.
 
-		if (isset($inscription))
+		if (isset($inscription)) //On test le formulaire envoyé
 		{
-			
+			//message d'erreur si les mots de pass entrés ne sont pas identiques
 			if($pass!=$repass) {$erreur="Erreur: Mots de passe non identiques!";}
 			
 			
 
-			else {
+			else { //On test si le pseudo entré n'existe pas déja.
 			
 					include("includes/bdd.php"); //On appelle la connexion à la BDD
 					$sel=$connexion->prepare("SELECT id FROM users WHERE login=? LIMIT 1"); 
@@ -37,10 +37,10 @@
 					if(count($tab)>0){ 
 						$erreur="Erreur: Login existe déjà!";
 					}  
-					else{ 
+					else{ //Enfin on enregistre les informations dans la table en BDD.
 						$ins=$connexion->prepare("INSERT INTO users(mail,login,pass) values(?,?,?)"); 
 						if($ins->execute(array($mail,$login,password_hash($pass,PASSWORD_DEFAULT)))); 
-						header('location:/projet/foodexplore.php');
+						//header('location:/projet/foodexplore.php');
 					}    
 				}
 		}

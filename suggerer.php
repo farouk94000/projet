@@ -1,4 +1,4 @@
-﻿<?php include("includes/header.php") ?>
+﻿<?php require("includes/header.php") ?>
 
 <!DOCTYPE html>
 <html>
@@ -22,35 +22,37 @@
 				
 			
 					<?php
-
+						//test la présence d'une session active avec un utilisateur connecté
 						if ( isset($_SESSION['login']) )
 						{	
-
+							//Récupération des infos qui sont sauvegardées dans des variables.
 							@$nom=htmlspecialchars($_POST["nom"]);
 							@$adresse=htmlspecialchars($_POST["adresse"]);
 							@$category=htmlspecialchars($_POST["category"]);
 							@$img=htmlspecialchars($_POST["img"]);
 							@$submit=$_POST["submit"];
 
-
 							$erreur="";
 
 
 
-							if (isset($submit))
+							if (isset($submit)) //On test les infos transmises dans le formulaire
 							{
-
-								include("includes/bdd.php");
+								//connexion à la base de données
+								require("includes/bdd.php");
 								
-								$ins=$connexion->prepare("INSERT INTO restaurant(nom,adresse,category,img) VALUES (?,?,?,?)" ); 						
+								//requête préparée, on envoi un exemple de requête au serveur
+								$ins=$connexion->prepare("INSERT INTO restaurant(nom,adresse,category,img) VALUES (?,?,?,?)" ); 	
+								 //execution, le serveur récupère les valeurs entrée dans les variables du formulaire.
 								$ins->execute(array($nom,$adresse,$category,$img));
-								header('location:/projet/submitted.php');
+								//Redirection si formulaire envoyé avec succès
+								header('location:/projet/projet/submitted.php');
 					
 							}
 							
 
 					?>	
-
+					<!-- On affiche le formulaire -->
 					<div id="formbox">
 							<h2>Suggérez-nous un restaurant</h2>
 									<div class="presentation">				
@@ -84,7 +86,7 @@
 		
 					<?php
 						}
-							else
+							else //Sinon, on affiche le message suivant:
 							{
 					?>	
 							<h1 class="defaultmessage"> Vous devez vous connecter ou être <a href="inscription.php" >inscrit</a> pour suggérer une adresse </h1> 
@@ -92,7 +94,7 @@
 							}	
 					?>
 
-				<?php include("includes/footer.php") ?>			
+				<?php require("includes/footer.php") ?>			
 </body>
 
 </html>	

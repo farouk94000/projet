@@ -1,4 +1,4 @@
-<?php include("includes/header.php") ?>
+<?php require("includes/header.php") ?>
 <!DOCTYPE html>
 <html>
 
@@ -14,14 +14,14 @@
 
 
 
-
+ 
 <div class="welcome"><p>MERCI <?php echo @$_SESSION['login'];?>! VOTRE ADRESSE A ÉTÉ AJOUTÉE AVEC SUCCES !</p></div>
 					 
 
 
 
 
-<?php include("includes/footer.php") ?>
+<?php require("includes/footer.php") ?>
 
 </body>
 
