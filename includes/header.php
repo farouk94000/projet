@@ -124,7 +124,7 @@ if (isset($connect))
 				
 				<li><a href="categories.php" class="button">CATÉGORIES</a></li>
 
-				<li><a href="tops.php" class="button">TOPS</a></li>
+				<li><a href="tops.php" class="button">TOP</a></li>
 					
 				<li><a href="suggerer.php" class="button">SUGGÉRER ADRESSE</a></li>
 				

@@ -40,7 +40,7 @@
 					else{ 
 						$ins=$connexion->prepare("INSERT INTO users(mail,login,pass) values(?,?,?)"); 
 						if($ins->execute(array($mail,$login,password_hash($pass,PASSWORD_DEFAULT)))); 
-						//header('location:/projet/foodexplore.php');
+						header('location:/projet/foodexplore.php');
 					}    
 				}
 		}

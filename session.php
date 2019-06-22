@@ -4,7 +4,7 @@
 
 
 			<head>
-				<title>Suggérer un restaurant</title>
+				<title>Food Explore</title>
 				<link  href="css/stylefoodx.css" rel="stylesheet"   type="text/css" />
 				<link  href="css/stylemodal.css" rel="stylesheet"   type="text/css" />
 				<meta http="Content-Type" content="text/html; charset="utf-8"/>

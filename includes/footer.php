@@ -25,12 +25,12 @@
 				<div class="footer_menu">
 						<h4>À PROPOS DE NOUS:<h4>
 
-							<a href="mentions.php"><h5>MENTIONS LÉGALES<h5></a>
-							<a href="contact.php"><h5>CONTACT<h5></a>		
 							<a href="categories.php"><h5>CATÉGORIES<h5></a>
+							<a href="tops.php"><h5>TOP<h5></a>	
 							<a href="suggerer.php"><h5>SUGGÉRER UN RESTAURANT<h5></a>
-							<a href="tops.php"><h5>TOPS<h5></a>
-				
+							<a href="contact.php"><h5>CONTACT<h5></a>
+							<a href="mentions.php"><h5>MENTIONS LÉGALES<h5></a>
+							
 				</div>
 				
 		

@@ -4,7 +4,7 @@
 <html>
 
 <head>
-<title>Tops</title>
+<title>Top</title>
 				<link  href="css/stylefoodx.css" rel="stylesheet"   type="text/css" />
 				<link  href="css/stylemodal.css" rel="stylesheet"   type="text/css" />
 				<meta http="Content-Type" content="text/html; charset="utf-8" />    
@@ -115,7 +115,8 @@ img {vertical-align: middle;}
 
 <body>
 
-<h1>Tops adresses</h1>
+<h1>Top adresses</h1>
+<h3>Découvrez une séléction régulière des meilleures adresses par la rédaction !</h3>
 
 <div class="slideshow-container">
 
