@@ -19,11 +19,7 @@
 
 
 
-<div class="welcome">
-	<p> BIENVENUE ! </p>
-	<p><img src="img/foodex1.png"/></p>
-	<p><?php echo @$_SESSION['login']; ?></p>
-</div>
+<div class="welcome"><p><img src="img/foodex1.png"/></p><p> Votre inscription a été prise en compte </p></div>
 					 
 
 

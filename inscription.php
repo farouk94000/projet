@@ -1,4 +1,6 @@
-<?php include("includes/header.php") ?>
+<?php require("includes/header2.php") ?>
+<?php require("includes/up.php")?>
+
 <!DOCTYPE html>
 <html>
 
@@ -7,6 +9,7 @@
 				<title>Inscription</title>
 				<link  href="css/stylefoodx.css" rel="stylesheet"   type="text/css" />
 				<link  href="css/stylemodal.css" rel="stylesheet"   type="text/css" />
+				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 				<meta http="Content-Type" content="text/html; charset="utf-8" />
 			
 			</head>
@@ -40,7 +43,7 @@
 					else{ //Enfin on enregistre les informations dans la table en BDD.
 						$ins=$connexion->prepare("INSERT INTO users(mail,login,pass) values(?,?,?)"); 
 						if($ins->execute(array($mail,$login,password_hash($pass,PASSWORD_DEFAULT)))); 
-						//header('location:/projet/foodexplore.php');
+						header('location:/projet/registred.php');
 					}    
 				}
 		}
@@ -51,11 +54,11 @@
 					
 
 
-				<div id="formbox" style= " width: 40%; height: 100%;">
+				<div id="formbox">
 					<form method="post" >
 						<div class="container">
 							<h1>Inscription</h1>
-								<p style="font-family: Arial, Helvetica, sans-serif;"><strong>*Veuillez remplir tout les champs obligatoires</strong></p>
+								<p><strong>*Veuillez remplir tout les champs obligatoires</strong></p>
 								<p style="color:red;"><?php echo $erreur; ?></p>
 									<hr>
 										<label for="email"><b>Email*</b> </label>
@@ -89,7 +92,8 @@
 														
 </div>
 
-            
+<?php require("includes/footer.php") ?>
+
 
 
 </body>
