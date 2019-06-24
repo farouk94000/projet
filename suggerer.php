@@ -55,7 +55,7 @@
 					//execution, le serveur récupère les valeurs entrée dans les variables du formulaire
 					$ins->execute(array($nom,$adresse,$category,$img));
 					//Redirection si formulaire envoyé avec succès
-					header('location:/projet/submitted.php');
+					header('location:../projet/submitted.php');
 				}
 				else //Message d'erreur affiché
 				{

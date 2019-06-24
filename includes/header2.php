@@ -52,7 +52,7 @@ if (isset($connect))
 
 						echo'
 								<span class="dropdown">
-									<button class="dropbtn"><img src="icon/user1.png" alt="Avatar">
+									<button class="dropbtn"><img src="icon/user3.png" alt="Avatar">
 									</button>
 									<span class="dropdown-content">
 										<a href="decon.php">Se déconnecter</a>
