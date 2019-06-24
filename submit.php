@@ -10,12 +10,12 @@
 				<link  href="css/stylefoodx.css" rel="stylesheet"   type="text/css" />
 				<link  href="css/stylemodal.css" rel="stylesheet"   type="text/css" />
 				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-				<meta http="Content-Type" content="text/html; charset="utf-8"/>
+				<meta http="Content-Type" content="text/html;" charset="utf-8"/>
 			
 			</head>
 <body>			
                         <?php                                                       
-                            @$nom=htmlspecialchars($_POST["nom"]);
+                            @$nom=htmlspecialchars($_POST["nom"]); //Récupération des infos du formulaire dans des variables
 							@$adresse=htmlspecialchars($_POST["adresse"]);
 							@$category=htmlspecialchars($_POST["category"]);
 							@$img=htmlspecialchars($_POST["img"]);
@@ -26,7 +26,7 @@
 
 
 
-							if (isset($submit))
+							if (isset($submit)) //On prépare la requête pour enregistrer en base de données un restaurant.
 							{
 
 								require("includes/bdd.php");
@@ -36,7 +36,7 @@
 
 								$sub->execute(array($nom,$adresse,$category,$img));
 
-								echo' <h3 style="color:red;">Votre suggestion est bien transmise !</h3>';			
+											
 								
 							}
                         ?>  

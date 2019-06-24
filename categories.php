@@ -278,6 +278,16 @@
 					 				
 				</div>
 			</a>
+
+			<a href="result.php?category=autre">
+				<div class="card">
+				
+					<img src="icon/resto2.png" alt="autres" style="width:50%"/>
+				
+					<h3><b>AUTRES</b></h3> 
+					 				
+				</div>
+			</a>
 			
 		</div>
 			

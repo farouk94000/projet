@@ -9,7 +9,7 @@
 				<link  href="css/stylefoodx.css" rel="stylesheet"   type="text/css" />
                 <link  href="css/stylemodal.css" rel="stylesheet"   type="text/css" />
                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-				<meta http="Content-Type" content="text/html; charset="utf-8"/>
+				<meta http="Content-Type" content="text/html;" charset="utf-8"/>
 			
             </head>
 
