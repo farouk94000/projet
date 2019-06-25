@@ -1,6 +1,4 @@
-<?php require("includes/header2.php") ?>
-<?php require("includes/up.php")?>
-
+<?php require("includes/header2.php")?>
 <!DOCTYPE html>
 <html>
 
@@ -17,7 +15,7 @@
 	<?php	//Récupération des infos qui sont sauvegardées dans des variables.		
 		@$mail=htmlspecialchars($_POST["mail"]);
 		@$login=htmlspecialchars($_POST["login"]);
-		@$pass=htmlspecialchars($_POST["password"]);
+		@$pass=htmlspecialchars($_POST["pass"]);
 		@$repass=htmlspecialchars($_POST["confirm"]);
 		@$inscription=$_POST["inscrip"];			
 
@@ -41,14 +39,18 @@
 						$erreur="Erreur: Login existe déjà!";
 					}  
 					else{ //Enfin on enregistre les informations dans la table en BDD.
+
 						$ins=$connexion->prepare("INSERT INTO users(mail,login,pass) values(?,?,?)"); 
-						if($ins->execute(array($mail,$login,password_hash($pass,PASSWORD_DEFAULT)))); 
-						header('location:/projet/registred.php');
+						$ins->execute(array($mail,$login,password_hash($pass, PASSWORD_DEFAULT))); 
+						//$ins->execute(array($mail,$login,$pass)); 
+						if ( $ins )
+						{
+							header('location:../projet/registred.php');
+						}
 					}    
 				}
 		}
 	?>
-
 	<body>
 
 					
@@ -71,7 +73,7 @@
 
 										<label for="psw"><b>Mot de passe*</b> </label>
 
-											<input type="password" placeholder="Mot de passe (Obligatoire)" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Doit contenir au moins un nombre, une majuscule, une minuscule et 8 caractères" required>
+											<input type="password" placeholder="Mot de passe (Obligatoire)" name="pass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Doit contenir au moins un nombre, une majuscule, une minuscule et 8 caractères" required>
 
 										<label for="psw-repeat"><b>Confirmez mot de passe*</b> </label>
 
