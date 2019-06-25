@@ -73,7 +73,7 @@
 
 										<label for="psw"><b>Mot de passe*</b> </label>
 
-											<input type="password" placeholder="Mot de passe (Obligatoire)" name="pass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Doit contenir au moins un nombre, une majuscule, une minuscule et 8 caractères" required>
+											<input type="password" placeholder="Mot de passe (Obligatoire)" name="pass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Doit contenir au moins 8 caractères dont une majuscule, une minuscule et un chiffre " required>
 
 										<label for="psw-repeat"><b>Confirmez mot de passe*</b> </label>
 
