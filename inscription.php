@@ -43,7 +43,7 @@
 						$ins=$connexion->prepare("INSERT INTO users(mail,login,pass) values(?,?,?)"); 
 						$ins->execute(array($mail,$login,password_hash($pass, PASSWORD_DEFAULT))); 
 						//$ins->execute(array($mail,$login,$pass)); 
-						if ( $ins )
+						if ( $ins ) //Si l'instruction s'est executé, on redirige
 						{
 							header('location:../projet/registred.php');
 						}
